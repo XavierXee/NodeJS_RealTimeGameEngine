@@ -1,0 +1,10 @@
+doctype
+html
+    head
+        title Okobo
+        script(src='/socket.io/socket.io.js')
+        -each script in scripts 
+            script(type='text/javascript', src=script)
+        script(src='/main.js', type='text/javascript')
+    body
+        div#ThreeJS(style='position:absolute; margin: -8px 0px 0px -8px; width:100%; height:100%; overflow: hidden;')
